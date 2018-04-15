@@ -1,5 +1,5 @@
 {
-  "name": "web1",
+  "name": "web3",
   "version": "1.0.0",
   "description": "A simple website in node js",
   "private": "true",
@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vlad-the-EPIChacker/web1.git"
+    "url": "git+https://github.com/vlad-the-EPIChacker/web3.git"
   },
   "keywords": [
     "vladov"
   ],
   "bugs": {
-    "url": "https://github.com/vlad-the-EPIChacker/web1/issues"
+    "url": "https://github.com/vlad-the-EPIChacker/web3/issues"
   },
-  "homepage": "https://github.com/vlad-the-EPIChacker/web1#readme"
+  "homepage": "https://github.com/vlad-the-EPIChacker/web3#readme"
 }

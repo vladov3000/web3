@@ -4,8 +4,8 @@ This explains how to create a website using node.js and express on MacOS. By the
 
 # Making the Website
 
-2.  Clone this project from github [here](https://github.com/vlad-the-EPIChacker/web1).  
-    `git clone https://github.com/vladov3000/web1`
+2.  Clone this project from github [here](https://github.com/vlad-the-EPIChacker/web3).  
+    `git clone https://github.com/vladov3000/web3`
 3.  Install node.js using homebrew  
     `brew install npm`
 4.  Install express and a logger(morgan) using npm  
@@ -38,7 +38,7 @@ This explains how to create a website using node.js and express on MacOS. By the
 
 # Setting Up the Website on a Droplet
 
-2.  Instead of writing a script, we're gonna use [docker](https://www.docker.com/) to install everything we installed in "Making the Website". Docker allows us to package multiple components in a single container. See the [Dockerfile](https://github.com/vladov3000/web1/blob/master/docker/Dockerfile) for more details.
+2.  Instead of writing a script, we're gonna use [docker](https://www.docker.com/) to install everything we installed in "Making the Website". Docker allows us to package multiple components in a single container. See the [Dockerfile](https://github.com/vladov3000/web3/blob/master/docker/Dockerfile) for more details.
 3.  Set up the droplet for our docker:  
     `sudo apt-get update  
     sudo apt-get upgrade  
@@ -48,11 +48,11 @@ This explains how to create a website using node.js and express on MacOS. By the
     exit  
     ssh root@ipAdress`
 4.  Now we clone the project by running  
-    `git clone https://github.com/vladov3000/web1`  
+    `git clone https://github.com/vladov3000/web3`  
     (replace the link to my repo with the link to your repo if you forked my repo).
-5.  Go to the docker folder by running `cd web1/docker`
+5.  Go to the docker folder by running `cd web3/docker`
 6.  First we need to make a docker container by running `./make_container.sh`
-7.  To start the container, run `./web1/docker/start_container.sh`
+7.  To start the container, run `./web3/docker/start_container.sh`
 8.  Type in your browser the ip address of your website
 
 # Getting a Domain Name
