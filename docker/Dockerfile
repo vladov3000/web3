@@ -25,6 +25,8 @@ RUN npm i --save pug
 RUN npm i --save stylus
 RUN npm install -g nodemon
 
+ENV PATH="/node_modules/stylus/bin:${PATH}"
+
 #website works on port 3000 inside the container
 EXPOSE 3000
 WORKDIR /web3
