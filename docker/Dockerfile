@@ -20,7 +20,9 @@ RUN apt-get -y install nodejs
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN apt-get -y install npm
 RUN npm i --save express morgan
-RUN npm i --save pug stylus
+RUN npm i --save morgan
+RUN npm i --save pug
+RUN npm i --save stylus
 RUN npm install -g nodemon
 
 #website works on port 3000 inside the container
