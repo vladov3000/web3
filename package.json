@@ -19,6 +19,7 @@
     "jade": "^1.11.0",
     "morgan": "^1.9.0",
     "nodemon": "^1.9.1",
+    "pug": "^2.0.3",
     "stylus": "^0.54.5"
   },
   "repository": {
@@ -31,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/vlad-the-EPIChacker/web3/issues"
   },
-  "homepage": "https://github.com/vlad-the-EPIChacker/web3#readme"
+  "homepage": "https://github.com/vlad-the-EPIChacker/web3#readme",
+  "devDependencies": {}
 }
