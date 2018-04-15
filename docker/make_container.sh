@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build . -t web1
+docker build . -t web3
