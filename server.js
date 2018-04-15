@@ -1,8 +1,8 @@
 var express = require('express')
   , logger = require('morgan')
   , app = express()
-  , template = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
-  , template1 = require('jade').compileFile(__dirname + '/source/templates/aboutpage.jade')
+  , template = require('pug').compileFile(__dirname + '/source/templates/homepage.pug')
+  , template1 = require('pug').compileFile(__dirname + '/source/templates/aboutpage.pug')
 
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/static'))
