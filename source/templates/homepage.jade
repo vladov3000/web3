@@ -1,7 +1,7 @@
 extend default
 
 block content
-    -var ll1 = "https://github.com/vladov3000/web1"
+    -var ll1 = "https://github.com/vladov3000/web3"
     -var ll2 = "http://localhost:3000"
 
     p.
@@ -10,7 +10,7 @@ block content
         Credits to #[a(href="https://github.com/bengourley") Ben Gourley] for the original code.
     ol
         h1 Making the Website
-        li Clone this project from github #[a(href="https://github.com/vlad-the-EPIChacker/web1") here]. <br /> #[code() git clone #{ll1}]
+        li Clone this project from github #[a(href="https://github.com/vlad-the-EPIChacker/web3") here]. <br /> #[code() git clone #{ll1}]
         li Install node.js using homebrew <br /> #[code() brew install npm]
         li Install express and a logger(morgan) using npm <br /> #[code() npm i --save express morgan]
         li Install jade(html template language) and stylus(css template language) for our front end of the website<br /> #[code() npm i --save pug stylus]
@@ -39,12 +39,12 @@ block content
         </br>
     ol
         h1 Setting Up the Website on a Droplet
-        li Instead of writing a script, we're gonna use #[a(href="https://www.docker.com/") docker] to install everything we installed in "Making the Website". Docker allows us to package multiple components in a single container. See the #[a(href="https://github.com/vladov3000/web1/blob/master/docker/Dockerfile") Dockerfile] for more details.
+        li Instead of writing a script, we're gonna use #[a(href="https://www.docker.com/") docker] to install everything we installed in "Making the Website". Docker allows us to package multiple components in a single container. See the #[a(href="https://github.com/vladov3000/web3/blob/master/docker/Dockerfile") Dockerfile] for more details.
         li Set up the droplet for our docker: </br> #[code()    sudo apt-get update</br>    sudo apt-get upgrade</br>   sudo apt-get install docker.io</br>     sudo apt-get install git</br>   sudo gpasswd -a $USER docker</br>   exit</br>   ssh root@ipAdress]
         li Now we clone the project by running </br>#[code() git clone #{ll1}] </br>(replace the link to my repo with the link to your repo if you forked my repo).
-        li Go to the docker folder by running #[code() cd web1/docker]
+        li Go to the docker folder by running #[code() cd web3/docker]
         li First we need to make a docker container by running #[code()  #{"./make_container.sh"}]
-        li To start the container, run #[code() #{"./web1/docker/start_container.sh"}]
+        li To start the container, run #[code() #{"./web3/docker/start_container.sh"}]
         li Type in your browser the ip address of your website
         </br>
     ol
