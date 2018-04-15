@@ -19,7 +19,7 @@ RUN apt-get update
 RUN apt-get -y install nodejs
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN apt-get -y install npm
-RUN npm i --save express morgan
+RUN npm i --save express
 RUN npm i --save morgan
 RUN npm i --save pug
 RUN npm i --save stylus
