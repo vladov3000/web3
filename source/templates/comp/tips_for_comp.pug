@@ -1,6 +1,6 @@
 ol
 	h1 15 Things to Review Before a Programming Competition
-	p Seattle is a popular place for programming competitions, and it's easy to forget important concepts. Here are some things to review before you participate in one. Note: These are python-specific tips.
+	p Seattle is a popular place for programming competitions, and it's easy to forget important concepts. Here are some things to review before you participate in one. Some good competitions are #[a(href="https://teamscode.com/") TeamsCode] and #[a(href="http://pscsta.org/") PSCSTA].
 
 	h2 1. Opening A File </br>
 	p1 Even though this is pretty basic, it's good to remember how to open files in case you run into technical difficulties at the competition. I open files using:
@@ -12,14 +12,94 @@ ol
 
 	h2 3. Objects Are Passed By Reference </br>
 	p1 This means when you make a variable equal to an object, such as a list, it will just be a pointer to the object. Here's an application:
-	p.
-		<pre><code>
+	pre.
+		<code>
 		def foo(a):
 		  a = 1
-		</code></pre>
-		<pre><samp>
-		2
-		3
-		</samp></pre>
+		a=[5]
+		foo(a)
+		print(a) #this will print 1, not 5
+		</code>
 
-	</br>#[code() func(b):</br>|.   b[0]=1</br></br>a=[5]</br>func(a)</br>a is now [1]]
+	h2 4. Strings Are Immutable
+	p1 You have to set a string to a new string instead of modifying it.
+	pre.
+		<code>
+		s='abcde'
+		s.reverse() #this does nothing
+		s=s.reverse() #this reverses s
+		</code>
+
+	h2 5. Lists/Dictionaries Are Mutable
+	pre.
+		<code>
+		a=[1,2,3,4]
+		a.sort() #a is now sorted
+		a=a.sort() #a is now None
+		</code>
+
+	h2 6. Sort Dictionary By Its Keys
+	pre.
+		<code>
+		a={'b':2,'a':1}
+		for k in sorted(list(a.keys())):
+			print(k,a[k])
+		</code>
+
+	h2 7. Sort Dictionary by Its Values
+	pre.
+		<code>
+		a={'b':2,'a':1}
+		pairs=[(k,v) for k,v in a.items()]
+		pairs.sort(key=lambda x: x[1])
+		print(pairs)
+		# output: [('a', 1), ('b', 2)]
+		</code>
+
+	h2 8. Sort List of Dicts By Key
+	pre.
+		<code>
+		dicts= [{'b':20,'a':10},{'b':2,'a':1}]
+		dicts.sort(key=lambda x:x['a'])
+		</code>
+
+	h2 9. Reverse Lists/Strings
+	pre.
+		<code>
+		print([1,2,3][::-1])
+
+		</code>
+
+	h2 10. Int to Ascii/Ascii to Int
+	pre.
+		<code>
+		print(chr(65))
+		print(ord('A'))
+		</code>
+
+	h2 11. String to Int / Int to String
+	pre.
+		<code>
+		a=[]
+		n=123
+		while n>0:
+		    a.append(chr(ord('0')+n%10))
+		    n /= 10
+		print(''.join(a[::-1]))
+
+		a=0
+		n='123'
+		while len(n)>0:
+		    a*=10
+		    a += ord(n[0])-ord('0')
+		    n =n[1:]
+		print(a)
+		</code>
+
+
+
+
+
+
+
+
