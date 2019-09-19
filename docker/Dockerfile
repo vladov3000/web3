@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:16.04
 MAINTAINER vladov3000@gmail.com
 
 RUN echo "0.1" > /version
