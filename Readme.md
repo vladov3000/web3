@@ -19,7 +19,7 @@ This explains how to create a website using node.js and express on MacOS. By the
 
 2.  Run `npm init` to initialize your website. Enter all the information it asks for. If you need to change it later, edit the package.json file.
 3.  Build the website by running `npm run build`
-4.  Run `np run watch` and open [http://localhost:3000](http://localhost:3000) to watch your website update live (you have to save your files for it to update).
+4.  Run `npm run watch` and open [http://localhost:3000](http://localhost:3000) to watch your website update live (you have to save your files for it to update).
 5.  Edit homepage.jade or any other template ending in -page.jade to change the html of that page. Edit defualt.jade to change the the taskbar or other elements present on every page.
 6.  Edit index.style to edit the css classes of the website. Do NOT edit the index.css file, because the file regenerates, discarding all changes, everytime the css is built.
 
