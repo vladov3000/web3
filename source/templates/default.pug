@@ -2,7 +2,7 @@ doctype html
 html
   head
     link(rel='stylesheet', href='/css/index.css')
-    title Vlad's Stuff
+    title vladov3000
     script(src='https://code.jquery.com/jquery-1.10.2.js')
 
   body
@@ -18,6 +18,22 @@ html
     .main-content
       block content
 
+    script.
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+      });
+      }
+
+
 
     .footer
-      p Copyright © 2020 Futurecorpz. Futurecorpz ® is a Registered Trademark of Futures (un)Ltd. in the Mars Community and other solar systems.
+      p Copyright © 2020 vladov3000. vladov3000® is a Registered Trademark of Futures (un)Ltd. in the Mars Community and other solar systems.
