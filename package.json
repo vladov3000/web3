@@ -15,7 +15,7 @@
   "author": "Ben Gourley",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jade": "^1.11.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.9.1",
